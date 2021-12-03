@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'hello world'
+                checkout scm
+                
             }
         }
         stage('Test') { 
