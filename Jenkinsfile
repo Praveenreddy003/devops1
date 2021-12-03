@@ -1,20 +1,23 @@
 pipeline {
-    agent any {
+    agent {
         label'slave2'
     }
     stages {
-        stage('Build') { 
+        stage('Build') 
+        { 
             steps {
                 checkout scm
                 
             }
         }
-        stage('Test') { 
+        stage('Test') 
+        { 
             steps {
                 echo 'done with testing'
             }
         }
-        stage('Deploy') { 
+        stage('Deploy') 
+        { 
             steps {
                 echo 'sucessfully deployed'
             }
